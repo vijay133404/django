@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'myrestaurants',
     'article',
     'rest_framework',
-    'django_pdb'
+    'django_pdb',
+    'blog_posts',
+    'employee',
 
 ]
 

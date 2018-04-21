@@ -24,14 +24,14 @@ def new_topic(request, pk):
 
         topic = Topic.objects.create(
             subject=subject,
-             board=board
-             # starter=user
+            board=board,
+            starter=user
         )
 
         post = Post.objects.create(
             message=message,
-             topic=topic
-            # created_by=user
+            topic=topic,
+            created_by=user
         )
 
         return redirect('board_topics', pk=board.pk)  # TODO: redirect to the created topic page
